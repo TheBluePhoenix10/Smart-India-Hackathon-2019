@@ -25,10 +25,8 @@ The dataset used to train this model is Kaggle-fer2013. The model detects variou
 
 Lane detection:
 The model detects the current lane of the vehicle and alerts the driver in case of any deviations. Rash driving can also be detected if too many lane changes occur within a particular time period. 
-The system uses sobel and gradient filters for detection of the lines. Radius of curvature value is used to decide the threshold. Sliding window is used to detect lane changes. We are using three colour scheme to detect the rash driving cases,
-Green- Normal driving
-Blue- Threshold crossed once
-Red- If the threshold is crossed continuously for next 50 frames- In this case we will send some alert signal.
+The system uses sobel and gradient filters for detection of the lines. Radius of curvature value is used to decide the threshold. Sliding window is used to detect lane changes. We are using three colour scheme to detect the rash driving cases:
+Green- Normal driving, Blue- Threshold crossed once, Red- If the threshold is crossed continuously for next 50 frames- In this case we will send some alert signal.
 
 Proximity sensing and audio alert:
 This feature will keep the driver alert about the distance with objects and other cars avoiding crashes. It will give different audio warnings to the driver whenever a vehicle or pedestrian is detected in close vicinity. The audio output is available in different languages and the driver has a choice to select a language as per his preference. Proximity is calculated using just one webcam unlike traditional approaches which need the use of multiple cameras.
