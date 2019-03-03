@@ -13,6 +13,7 @@ Features:
 5) Proximity sensing and audio alert(in different languages)
 6) Traffic sign detection 
 7) Distraction by the use of mobile
+8) Reminder for maintenance
 
 Drowsiness detection:
 The system detects Eye Aspect Ratio(EAR) using Haar cascade classifier along with Adaboost optimizer which is the world's finest optimizer for binary classification, unlike traditional approaches.
@@ -36,3 +37,6 @@ Traffic signs are sometimes ignored when driver isn't paying attention, this fea
 
 Distraction by the use of mobile:
 EAR is used to implement this technique. if the driver is on his/her phone for a long time then the system sets off a buzzer sound which alerts the driver.
+
+Reminder for maintenance:
+This system uses a database which consists of driver's login credentials, basic information about vehicle and driver, EmergencyContact, Scheduled maintenance date. As per the scheduled date an alert is sent to the driver to remind about the maintenence. Once the vehicle maintenence is done, the datbase automatically updates the date for next cycle. Difference between two maintenance cycles is 35 days.
